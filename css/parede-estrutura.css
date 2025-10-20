@@ -1,0 +1,163 @@
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  z-index: 9;
+}
+
+body {
+  padding-bottom: 60px;
+  padding-top: 30px;
+}
+
+/* ---------------- Célula ---------------- */
+.cell-container {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 2rem auto;
+}
+
+/* Parede celular - hexágono */
+.cell-wall {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    clip-path: polygon(
+    50% 0%, 93% 25%, 93% 75%, 50% 100%, 7% 75%, 7% 25%
+    );
+    background-color: #2ecc71;
+    z-index: 0;
+    cursor: pointer;
+}
+
+/* Membrana */
+.cell-membrane {
+    position: absolute;
+    top: 25px;      
+    left: 25px;     
+    width: calc(100% - 50px);  
+    height: calc(100% - 50px);
+    border-radius: 50%;
+    border: 16px solid #eb2d18;
+    background-color: transparent;
+    z-index: 1;
+    cursor: pointer;
+    animation: membraneFloat 4s infinite ease-in-out;
+}
+
+/* Citoplasma */
+.cell-cytoplasm {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    width: calc(100% - 70px);
+    height: calc(100% - 70px);
+    border-radius: 50%;
+    background-color: #f5d27d;
+    z-index: 2;
+    cursor: pointer;
+    overflow: hidden;
+    animation: cytoplasmFloat 12s infinite ease-in-out;
+}
+
+.cytoplasm-particle {
+    position: absolute;
+    width: 8px;
+    z-index: 3;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #ffb703;
+    animation: particleMove 12s linear infinite;
+}
+
+/* Núcleo */
+.cell-nucleus {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    width: calc(100% - 200px);
+    height: calc(100% - 200px);
+    border-radius: 50%;
+    background-color: #9b59b6;
+    z-index: 3;
+    cursor: pointer;
+}
+
+/* Cloroplastos */
+.chloroplast {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #27ae60;
+    border-radius: 50%;
+    z-index: 4;
+    cursor: pointer;
+    animation: moveSmall 6s infinite alternate;
+}
+
+/* Mitocôndrias */
+.mitochondria {
+    position: absolute;
+    width: 25px;
+    height: 15px;
+    background-color: #e67e22;
+    border-radius: 50% / 40%;
+    z-index: 4;
+    cursor: pointer;
+    animation: moveMedium 8s infinite alternate;
+}
+
+/* Vacúolo */
+.vacuole {
+    position: absolute;
+    width: 50px;
+    height: 80px;
+    background-color: #5dade2;
+    border-radius: 50%;
+    z-index: 6;
+    top: 60px;
+    left: 45px;
+    cursor: pointer;
+}
+
+/* Animações de organelas */
+@keyframes moveSmall {
+    0% { transform: translate(0,0);}
+    25% { transform: translate(8px,-5px);}
+    50% { transform: translate(-8px,6px);}
+    75% { transform: translate(5px,5px);}
+    100% { transform: translate(0,0);}
+}
+
+@keyframes moveMedium {
+    0% { transform: translate(0,0);}
+    25% { transform: translate(-10px,8px);}
+    50% { transform: translate(10px,-10px);}
+    75% { transform: translate(-5px,5px);}
+    100% { transform: translate(0,0);}
+}
+
+/* ---------------- Animações ---------------- */
+@keyframes membraneFloat {
+    0%,100% { transform: translateY(0); }
+    50% { transform: translateY(-5px); }
+}
+
+@keyframes cytoplasmFloat {
+    0%,100% { transform: translate(0,0); }
+    25% { transform: translate(2px,-2px); }
+    50% { transform: translate(-2px,2px); }
+    75% { transform: translate(1px,1px); }
+}
+
+@keyframes particleMove {
+    0% { transform: translate(0,0); }
+    25% { transform: translate(10px,-8px); }
+    50% { transform: translate(-10px,8px); }
+    75% { transform: translate(8px,-8px); }
+    100% { transform: translate(0,0); }
+}

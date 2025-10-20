@@ -1,0 +1,22 @@
+header {
+  background: linear-gradient(90deg, #2ba757, #06c006);
+  color: white;
+  padding: 1rem 1rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0; 
+  left: 0;
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  background-color: #006400;
+  color: #fff;
+  z-index: 4; 
+}
+
+body {
+  padding-bottom: 60px; 
+  padding-top: 40px;
+}
