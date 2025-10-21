@@ -1,7 +1,21 @@
-header {
-  background: linear-gradient(90deg, #2ba757, #06c006);
-  color: white;
-  padding: 1rem 1rem;
+.site-header {
+  background-color: #ffffff !important;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.site-header .display-4,
+.site-header .lead {
+  background: linear-gradient(90deg, #2ba757 0%, #06c006 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent !important;
+  display: inline-block;
+}
+
+.site-header .lead {
+  font-weight: 500;
 }
 
 footer {
@@ -19,4 +33,5 @@ footer {
 body {
   padding-bottom: 60px; 
   padding-top: 40px;
+  background-color: #F5F8F6;
 }

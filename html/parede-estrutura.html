@@ -38,17 +38,17 @@
       <h2 class="h5 text-success">Composição Química</h2>
       <p>A parede celular é formada por substâncias como celulose, hemicelulose, pectina, lignina e cutina (ou suberina). Esses componentes são responsáveis por conferir rigidez, resistência, adesão e certa flexibilidade à célula, garantindo sua sustentação e forma estável.</p>
 
-      <div class="cell-container">
-        <div class="cell-wall" data-bs-toggle="tooltip" title="Parede celular: protege e dá forma à célula."></div>
-        <div class="cell-membrane" data-bs-toggle="tooltip" title="Membrana plasmática: controla a entrada e saída de substâncias."></div>
-        <div class="cell-cytoplasm" data-bs-toggle="tooltip" title="Citoplasma: contém organelas e permite o movimento intracelular."> </div>
-        <div class="cytoplasm-particle" style="top:70px; left:170px; animation-duration:5s;" data-bs-toggle="tooltip" title="Ribossomo: sintetiza proteínas a partir das informações contidas no RNA mensageiro"></div>
-        <div class="cytoplasm-particle" style="top:90px; left:150px; animation-duration:4s;" data-bs-toggle="tooltip" title="Ribossomo: sintetiza proteínas a partir das informações contidas no RNA mensageiro"></div>
-        <div class="chloroplast" style="top:160px; left:120px;" data-bs-toggle="tooltip" title="Cloroplasto: realiza fotossíntese."></div>
-        <div class="chloroplast" style="top:120px; left:160px;" data-bs-toggle="tooltip" title="Cloroplasto: realiza fotossíntese."></div>
-        <div class="mitochondria" style="top:70px; left:110px;" data-bs-toggle="tooltip" title="Mitocôndria: produz energia (ATP)."></div>
-        <div class="vacuole" data-bs-toggle="tooltip" title="Vacúolo: armazena água e nutrientes."></div>
-        <div class="cell-nucleus" data-bs-toggle="tooltip" title="Núcleo: contém o material genético e controla a célula."></div>
+      <div class="celula-container">
+        <div class="parede-celular" data-bs-toggle="tooltip" title="Parede celular: protege e dá forma à célula."></div>
+        <div class="celula-membrana" data-bs-toggle="tooltip" title="Membrana plasmática: controla a entrada e saída de substâncias."></div>
+        <div class="celula-citoplasma" data-bs-toggle="tooltip" title="Citoplasma: contém organelas e permite o movimento intracelular."> </div>
+        <div class="citoplasma-particula" style="top:70px; left:170px; animation-duration:5s;" data-bs-toggle="tooltip" title="Ribossomo: sintetiza proteínas a partir das informações contidas no RNA mensageiro"></div>
+        <div class="citoplasma-particula" style="top:90px; left:150px; animation-duration:4s;" data-bs-toggle="tooltip" title="Ribossomo: sintetiza proteínas a partir das informações contidas no RNA mensageiro"></div>
+        <div class="cloroplasto" style="top:160px; left:120px;" data-bs-toggle="tooltip" title="Cloroplasto: realiza fotossíntese."></div>
+        <div class="cloroplasto" style="top:120px; left:160px;" data-bs-toggle="tooltip" title="Cloroplasto: realiza fotossíntese."></div>
+        <div class="mitocondria" style="top:70px; left:110px;" data-bs-toggle="tooltip" title="Mitocôndria: produz energia (ATP)."></div>
+        <div class="vacuolo" data-bs-toggle="tooltip" title="Vacúolo: armazena água e nutrientes."></div>
+        <div class="celula-nucleo" data-bs-toggle="tooltip" title="Núcleo: contém o material genético e controla a célula."></div>
       </div>
       <p class="text-center text-muted mt-2"><em>Representação de uma célula vegetal</em></p>
       <p>Além disso, esses compostos também regulam a passagem de substâncias, permitindo que a parede celular seja semipermeável — ou seja, capaz de impermeabilizar a estrutura quando necessário e, ao mesmo tempo, permitir a entrada de substâncias essenciais para o funcionamento interno da célula.</p>
@@ -67,6 +67,11 @@
       </p>
       <video src="../videos/parede_localizacao.mp4" class="rounded shadow-sm" controls></video>
     </section>
+
+    <div class="d-flex justify-content-center mt-4">
+      <input class="btn btn-success" id="btnTopo" type="button" onclick="topo()" value="↑ Voltar ao Topo">
+    </div>
+    
   </main>
 
   <footer class="bg-success text-white text-center py-3">

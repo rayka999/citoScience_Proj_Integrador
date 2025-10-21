@@ -11,7 +11,8 @@ footer {
 
 body {
   padding-bottom: 70px; 
-  padding-top: 70px; 
+  padding-top: 70px;
+  background-color: #F5F8F6;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -76,8 +77,8 @@ h2.diferencas {
 }
 
 .table-semelhancas th {
-  background-color: #2e8b57;
-  color: white;
+  background-color: #2e8b57 !important;
+  color: white !important;
   text-align: center;
 }
 
@@ -90,9 +91,9 @@ h2.diferencas {
   background-color: #eaf6ec;
 }
 
-.table-diferencas th {
-  background-color: #c0392b;
-  color: white;
+.table-diferencas th{
+  background-color: #c0392b !important; 
+  color: white !important;
   text-align: center;
 }
 

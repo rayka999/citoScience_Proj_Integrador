@@ -11,18 +11,17 @@ footer {
 body {
   padding-bottom: 60px;
   padding-top: 30px;
+  background-color: #F5F8F6;
 }
 
-/* ---------------- Célula ---------------- */
-.cell-container {
+.celula-container {
     position: relative;
     width: 250px;
     height: 250px;
     margin: 2rem auto;
 }
 
-/* Parede celular - hexágono */
-.cell-wall {
+.parede-celular {
     position: absolute;
     top: 0; left: 0;
     width: 100%; height: 100%;
@@ -34,8 +33,7 @@ body {
     cursor: pointer;
 }
 
-/* Membrana */
-.cell-membrane {
+.celula-membrana {
     position: absolute;
     top: 25px;      
     left: 25px;     
@@ -46,11 +44,10 @@ body {
     background-color: transparent;
     z-index: 1;
     cursor: pointer;
-    animation: membraneFloat 4s infinite ease-in-out;
+    animation: membrana 4s infinite ease-in-out;
 }
 
-/* Citoplasma */
-.cell-cytoplasm {
+.celula-citoplasma {
     position: absolute;
     top: 35px;
     left: 35px;
@@ -61,21 +58,20 @@ body {
     z-index: 2;
     cursor: pointer;
     overflow: hidden;
-    animation: cytoplasmFloat 12s infinite ease-in-out;
+    animation: citoplasma 12s infinite ease-in-out;
 }
 
-.cytoplasm-particle {
+.citoplasma-particula {
     position: absolute;
     width: 8px;
     z-index: 3;
     height: 8px;
     border-radius: 50%;
     background-color: #ffb703;
-    animation: particleMove 12s linear infinite;
+    animation: particula 25s linear infinite;
 }
 
-/* Núcleo */
-.cell-nucleus {
+.celula-nucleo {
     position: absolute;
     top: 100px;
     left: 100px;
@@ -87,8 +83,7 @@ body {
     cursor: pointer;
 }
 
-/* Cloroplastos */
-.chloroplast {
+.cloroplasto {
     position: absolute;
     width: 20px;
     height: 20px;
@@ -96,11 +91,10 @@ body {
     border-radius: 50%;
     z-index: 4;
     cursor: pointer;
-    animation: moveSmall 6s infinite alternate;
+    animation: move_lento 6s infinite alternate;
 }
 
-/* Mitocôndrias */
-.mitochondria {
+.mitocondria {
     position: absolute;
     width: 25px;
     height: 15px;
@@ -108,11 +102,10 @@ body {
     border-radius: 50% / 40%;
     z-index: 4;
     cursor: pointer;
-    animation: moveMedium 8s infinite alternate;
+    animation: move_medio 8s infinite alternate;
 }
 
-/* Vacúolo */
-.vacuole {
+.vacuolo {
     position: absolute;
     width: 50px;
     height: 80px;
@@ -124,8 +117,7 @@ body {
     cursor: pointer;
 }
 
-/* Animações de organelas */
-@keyframes moveSmall {
+@keyframes move_lento {
     0% { transform: translate(0,0);}
     25% { transform: translate(8px,-5px);}
     50% { transform: translate(-8px,6px);}
@@ -133,7 +125,7 @@ body {
     100% { transform: translate(0,0);}
 }
 
-@keyframes moveMedium {
+@keyframes move_medio {
     0% { transform: translate(0,0);}
     25% { transform: translate(-10px,8px);}
     50% { transform: translate(10px,-10px);}
@@ -141,20 +133,19 @@ body {
     100% { transform: translate(0,0);}
 }
 
-/* ---------------- Animações ---------------- */
-@keyframes membraneFloat {
+@keyframes membrana {
     0%,100% { transform: translateY(0); }
     50% { transform: translateY(-5px); }
 }
 
-@keyframes cytoplasmFloat {
+@keyframes citoplasma {
     0%,100% { transform: translate(0,0); }
     25% { transform: translate(2px,-2px); }
     50% { transform: translate(-2px,2px); }
     75% { transform: translate(1px,1px); }
 }
 
-@keyframes particleMove {
+@keyframes particula {
     0% { transform: translate(0,0); }
     25% { transform: translate(10px,-8px); }
     50% { transform: translate(-10px,8px); }
