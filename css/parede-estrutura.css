@@ -11,7 +11,7 @@ footer {
 body {
   padding-bottom: 60px;
   padding-top: 30px;
-  background-color: #F5F8F6;
+  background-color: #F5F8F6 !important;
 }
 
 .celula-container {

@@ -102,36 +102,80 @@
 
           <div class="carousel-item active">
             <div class="card p-3 shadow-sm text-center">
-              <h5>1- A membrana plasmática é formada principalmente por:</h5>
+              <h5>1 - A membrana plasmática é formada principalmente por:</h5>
               <ul class="list-group">
-                <li class="list-group-item" onclick="showFeedback(this, false)">a) Celulose e lignina.</li>
-                <li class="list-group-item" onclick="showFeedback(this, true)">b) Fosfolipídios e proteínas. <span class="feedback text-success d-none">✔ Correto! Esses componentes formam o modelo do mosaico fluido.</span></li>
-                <li class="list-group-item" onclick="showFeedback(this, false)">c) Ácidos nucleicos e glicerol.</li>
-                <li class="list-group-item" onclick="showFeedback(this, false)">d) Quitina e lipídios simples.</li>
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  a) Celulose e lignina.
+                  <span class="feedback text-danger d-none">✖ Incorreto. Esses compostos formam a parede celular vegetal, não a membrana.</span>
+                </li>
+                <li class="list-group-item" onclick="showFeedback(this, true)">
+                  b) Fosfolipídios e proteínas.
+                  <span class="feedback text-success d-none">✔ Correto!</span>
+                </li>
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  c) Ácidos nucleicos e glicerol.
+                  <span class="feedback text-danger d-none">✖ Incorreto. Ácidos nucleicos estão ligados ao material genético.</span>
+                </li>
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  d) Quitina e lipídios simples.
+                  <span class="feedback text-danger d-none">✖ Incorreto. A quitina compõe paredes celulares de fungos e exoesqueletos.</span>
+                </li>
               </ul>
             </div>
           </div>
 
           <div class="carousel-item text-center">
             <div class="card p-3 shadow-sm">
-              <h5>2- A função principal da membrana plasmática é:</h5>
+              <h5>2 - A função principal da membrana plasmática é:</h5>
               <ul class="list-group">
-                <li class="list-group-item" onclick="showFeedback(this, true)">a) Controlar a entrada e saída de substâncias. <span class="feedback text-success d-none">✔ Correto! Ela é semipermeável e regula trocas com o meio.</span></li>
-                <li class="list-group-item" onclick="showFeedback(this, false)">b) Armazenar nutrientes.</li>
-                <li class="list-group-item" onclick="showFeedback(this, false)">c) Produzir energia.</li>
-                <li class="list-group-item" onclick="showFeedback(this, false)">d) Formar a parede celular.</li>
+                <li class="list-group-item" onclick="showFeedback(this, true)">
+                  a) Controlar a entrada e saída de substâncias.
+                  <span class="feedback text-success d-none">✔ Correto! Ela é semipermeável e regula as trocas entre a célula e o meio.</span>
+                </li>
+
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  b) Armazenar nutrientes.
+                  <span class="feedback text-danger d-none">✖ Incorreto. Essa função está mais relacionada ao vacúolo e ao citoplasma.</span>
+                </li>
+
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  c) Produzir energia.
+                  <span class="feedback text-danger d-none">✖ Incorreto. A produção de energia ocorre nas mitocôndrias, não na membrana plasmática.</span>
+                </li>
+
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  d) Formar a parede celular.
+                  <span class="feedback text-danger d-none">✖ Incorreto. A parede celular é uma estrutura externa presente apenas em células vegetais e bacterianas.</span>
+                </li>
               </ul>
             </div>
           </div>
 
           <div class="carousel-item">
             <div class="card p-3 shadow-sm text-center">
-              <h5>3- A membrana plasmática segue o modelo do:</h5>
+              <h5>3 - A membrana plasmática segue o modelo do:</h5>
               <ul class="list-group">
-                <li class="list-group-item" onclick="showFeedback(this, true)">a) Mosaico fluido. <span class="feedback text-success d-none">✔ Correto! O modelo descreve proteínas imersas em uma bicamada lipídica fluida.</span></li>
-                <li class="list-group-item" onclick="showFeedback(this, false)">b) Parede rígida.</li>
-                <li class="list-group-item" onclick="showFeedback(this, false)">c) Dupla hélice.</li>
-                <li class="list-group-item" onclick="showFeedback(this, false)">d) Citosqueletal fixo.</li>
+
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  a) Citosqueletal fixo.
+                  <span class="feedback text-danger d-none">✖ Incorreto. O citoesqueleto é uma estrutura interna, não um modelo de membrana.</span>
+                </li>
+
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  b) Parede rígida.
+                  <span class="feedback text-danger d-none">✖ Incorreto. A membrana não é rígida, ela é flexível e dinâmica.</span>
+                </li>
+
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  c) Dupla hélice.
+                  <span class="feedback text-danger d-none">✖ Incorreto. A dupla hélice é o modelo estrutural do DNA, não da membrana plasmática.</span>
+                </li>
+
+                <li class="list-group-item" onclick="showFeedback(this, true)">
+                  d) Mosaico Fluido
+                  <span class="feedback text-success d-none">✔ Correto! O modelo do mosaico fluido descreve proteínas inseridas em uma bicamada lipídica fluida.</span>
+                </li>
+
               </ul>
             </div>
           </div>
@@ -140,78 +184,118 @@
             <div class="card p-3 shadow-sm text-center">
               <h5>4- A parede celular primária das células vegetais é composta por:</h5>
               <ul class="list-group">
-                <li class="list-group-item" onclick="showFeedback(this, false)">a) Lignina, hemicelulose e pectina.</li>
-                <li class="list-group-item" onclick="showFeedback(this, true)">b) Celulose, hemicelulose e pectina. <span class="feedback text-success d-none">✔ Correto! Esses componentes conferem resistência e flexibilidade à parede primária.</span></li>
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  a) Lignina, hemicelulose e pectina. 
+                  <span class="feedback text-danger d-none">✖ Incorreto. A parede primária não contém lignina; ela está presente na parede secundária.</span>
+                </li>
+                <li class="list-group-item" onclick="showFeedback(this, true)">
+                  b) Celulose, hemicelulose e pectina. 
+                  <span class="feedback text-success d-none">✔ Correto! Esses componentes conferem resistência e flexibilidade à parede primária.</span>
+                </li>
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  c) Quitina, celulose e pectina. 
+                  <span class="feedback text-danger d-none">✖ Incorreto. Quitina não faz parte das células vegetais; ela é característica das paredes celulares de fungos.</span>
+                </li>
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  d) Proteínas, lipídios e ácidos nucleicos. 
+                  <span class="feedback text-danger d-none">✖ Incorreto. Esses componentes não formam a parede celular primária; eles estão principalmente no citoplasma e membrana plasmática.</span>
+                </li>
               </ul>
             </div>
           </div>
 
           <div class="carousel-item">
             <div class="card p-3 shadow-sm text-center">
-              <h5>5- A parede celular secundária das células vegetais é composta por:</h5>
+              <h5>5- A parede celular das células vegetais tem função de:</h5>
               <ul class="list-group">
-                <li class="list-group-item" onclick="showFeedback(this, true)">a) Lignina, hemicelulose e pectina. <span class="feedback text-success d-none">✔ Correto! A lignina confere rigidez e impermeabilidade.</span></li>
-                <li class="list-group-item" onclick="showFeedback(this, false)">b) Celulose, hemicelulose, pectina e suberina.</li>
+                <li class="list-group-item" onclick="showFeedback(this, true)">
+                  a) Limitar a expansão do protoplasto e atuar na defesa contra patógenos. 
+                  <span class="feedback text-success d-none">✔ Correto! A parede evita ruptura da membrana e protege contra fungos e bactérias.</span>
+                </li>
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  b) Atuar no transporte ativo de íons. 
+                  <span class="feedback text-danger d-none">✖ Incorreto. O transporte ativo de íons é função da membrana plasmática, não da parede celular.</span>
+                </li>
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  c) Produzir energia celular por respiração. 
+                  <span class="feedback text-danger d-none">✖ Incorreto. A parede celular não produz energia; isso ocorre nas mitocôndrias.</span>
+                </li>
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  d) Armazenar material genético. 
+                  <span class="feedback text-danger d-none">✖ Incorreto. O material genético está no núcleo, não na parede celular.</span>
+                </li>
               </ul>
             </div>
           </div>
 
           <div class="carousel-item">
             <div class="card p-3 shadow-sm text-center">
-              <h5>6- A parede celular das células vegetais tem função de:</h5>
+              <h5>6- A osmose é um tipo de transporte:</h5>
               <ul class="list-group">
-                <li class="list-group-item" onclick="showFeedback(this, true)">a) Limitar a expansão do protoplasto e atuar na defesa contra patógenos. <span class="feedback text-success d-none">✔ Correto! A parede evita ruptura da membrana e protege contra fungos e bactérias.</span></li>
-                <li class="list-group-item" onclick="showFeedback(this, false)">b) Atuar no transporte ativo de íons.</li>
+                <li class="list-group-item" onclick="showFeedback(this, true)">
+                  a) Ativo, pois ocorre contra o gradiente de concentração. 
+                  <span class="feedback text-danger d-none">✖ Incorreto. A osmose ocorre sempre a favor do gradiente de concentração; não consome energia.</span>
+                </li>
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  b) Ativo, pois exige ATP. 
+                  <span class="feedback text-danger d-none">✖ Incorreto. Transporte ativo requer energia (ATP), mas a osmose é um processo passivo de movimento de água.</span>
+                </li>
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  c) Passivo, mas exige proteínas transportadoras. 
+                  <span class="feedback text-danger d-none">✖ Incorreto. A osmose não requer proteínas transportadoras; a água atravessa a membrana por difusão simples ou aquaporinas.</span>
+                </li>
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  d) Passivo, pois ocorre sem gasto de energia. 
+                  <span class="feedback text-success d-none">✔ Correto! A água se move espontaneamente por diferença de concentração através da membrana sem consumo de ATP.</span>
+                </li>
               </ul>
             </div>
           </div>
 
           <div class="carousel-item">
             <div class="card p-3 shadow-sm text-center">
-              <h5>7- A osmose é um tipo de transporte:</h5>
+              <h5>7- A osmose ocorre devido à:</h5>
               <ul class="list-group">
-                <li class="list-group-item" onclick="showFeedback(this, true)">a) Passivo, pois ocorre sem gasto de energia. <span class="feedback text-success d-none">✔ Correto! A água se move espontaneamente por diferença de concentração.</span></li>
-                <li class="list-group-item" onclick="showFeedback(this, false)">b) Ativo, pois exige ATP.</li>
+                <li class="list-group-item" onclick="showFeedback(this, true)">
+                  a) Pressão mecânica aplicada à membrana. 
+                  <span class="feedback text-danger d-none">✖ Incorreto. A pressão mecânica pode afetar a movimentação da água, mas a osmose ocorre por gradiente de concentração, independentemente de pressão externa.</span>
+                </li>
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  b) Diferença de temperatura entre os meios. 
+                  <span class="feedback text-danger d-none">✖ Incorreto. A osmose depende de gradientes de concentração, não de temperatura.</span>
+                </li>
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  c) Diferença de concentração de solutos entre dois meios separados por membrana semipermeável. 
+                  <span class="feedback text-success d-none">✔ Correto! A água se desloca para equilibrar as concentrações de solutos entre os dois lados da membrana.</span>
+                </li>
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  d) Ação de enzimas transportadoras. 
+                  <span class="feedback text-danger d-none">✖ Incorreto. A osmose não depende de enzimas; é um processo passivo de difusão de água através da membrana semipermeável.</span>
+                </li>
               </ul>
             </div>
           </div>
 
           <div class="carousel-item">
             <div class="card p-3 shadow-sm text-center">
-              <h5>8- A osmose ocorre devido à:</h5>
+              <h5>8- O que ocorre com uma célula vegetal em meio hipertônico?</h5>
               <ul class="list-group">
-                <li class="list-group-item" onclick="showFeedback(this, true)">a) Diferença de concentração de solutos entre dois meios separados por membrana semipermeável. <span class="feedback text-success d-none">✔ Correto! A água se desloca para equilibrar as concentrações.</span></li>
-                <li class="list-group-item" onclick="showFeedback(this, false)">b) Diferença de temperatura entre os meios.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="card p-3 shadow-sm text-center">
-              <h5>9- Em células vegetais, a osmose resulta em:</h5>
-              <ul class="list-group">
-                <li class="list-group-item" onclick="showFeedback(this, true)">a) Turgência quando em meio hipotônico. <span class="feedback text-success d-none">✔ Correto! A entrada de água aumenta o volume da célula, pressionando a parede celular.</span></li>
-                <li class="list-group-item" onclick="showFeedback(this, false)">b) Plasmólise em meio hipotônico.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="card p-3 shadow-sm text-center">
-              <h5>10- A plasmólise ocorre quando:</h5>
-              <ul class="list-group">
-                <li class="list-group-item" onclick="showFeedback(this, true)">a) A célula perde água e o protoplasto se afasta da parede celular. <span class="feedback text-success d-none">✔ Correto! Isso ocorre em meio hipertônico.</span></li>
-                <li class="list-group-item" onclick="showFeedback(this, false)">b) A célula ganha água e incha.</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="carousel-item">
-            <div class="card p-3 shadow-sm text-center">
-              <h5>11- O que ocorre com uma célula vegetal em meio hipertônico?</h5>
-              <ul class="list-group">
-                <li class="list-group-item" onclick="showFeedback(this, true)">a) Ocorre saída de água e plasmólise. <span class="feedback text-success d-none">✔ Correto! A água sai e o protoplasto se retrai.</span></li>
-                <li class="list-group-item" onclick="showFeedback(this, false)">b) A célula se torna túrgida.</li>
+                <li class="list-group-item" onclick="showFeedback(this, true)">
+                  a) Ocorre saída de água e plasmólise. 
+                  <span class="feedback text-success d-none">✔ Correto! A água sai da célula, fazendo o protoplasto se retrair e a célula sofrer plasmólise.</span>
+                </li>
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  b) A célula se torna túrgida. 
+                  <span class="feedback text-danger d-none">✖ Incorreto. A célula fica túrgida em meio hipotônico, quando a água entra no vacúolo.</span>
+                </li>
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  c) A célula se rompe (lise). 
+                  <span class="feedback text-danger d-none">✖ Incorreto. A lise ocorre em células animais em meio hipotônico extremo, mas a parede vegetal impede o rompimento imediato.</span>
+                </li>
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  d) Não ocorre alteração no volume celular. 
+                  <span class="feedback text-danger d-none">✖ Incorreto. Em meio hipertônico, há saída de água e redução do volume do protoplasto.</span>
+                </li>
               </ul>
             </div>
           </div>
@@ -220,11 +304,26 @@
             <div class="card p-3 shadow-sm text-center">
               <h5>12- A diferença entre osmose em células animais e vegetais é que:</h5>
               <ul class="list-group">
-                <li class="list-group-item" onclick="showFeedback(this, true)">a) As células vegetais resistem melhor à entrada de água por possuírem parede celular. <span class="feedback text-success d-none">✔ Correto! A parede impede a lise que ocorre nas células animais.</span></li>
-                <li class="list-group-item" onclick="showFeedback(this, false)">b) Ambas se rompem facilmente em meio hipotônico.</li>
+                <li class="list-group-item" onclick="showFeedback(this, true)">
+                  a) As células vegetais resistem melhor à entrada de água por possuírem parede celular. 
+                  <span class="feedback text-success d-none">✔ Correto! A parede celular confere resistência e impede a lise que pode ocorrer em células animais em meio hipotônico.</span>
+                </li>
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  b) Ambas se rompem facilmente em meio hipotônico. 
+                  <span class="feedback text-danger d-none">✖ Incorreto. Apenas as células animais podem se romper por excesso de entrada de água; as vegetais resistem devido à parede celular.</span>
+                </li>
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  c) As células vegetais não sofrem osmose. 
+                  <span class="feedback text-danger d-none">✖ Incorreto. As células vegetais também sofrem osmose, mas sua parede limita a expansão excessiva.</span>
+                </li>
+                <li class="list-group-item" onclick="showFeedback(this, false)">
+                  d) As células animais possuem parede celular que impede a entrada de água. 
+                  <span class="feedback text-danger d-none">✖ Incorreto. Células animais não possuem parede celular; isso as torna mais suscetíveis à lise osmótica.</span>
+                </li>
               </ul>
             </div>
           </div>
+
     </section>
     <div class="d-flex justify-content-between mt-3">
       <button class="btn btn-outline-success" type="button" data-bs-target="#quizCarousel" data-bs-slide="prev">

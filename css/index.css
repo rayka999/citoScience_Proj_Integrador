@@ -1,5 +1,5 @@
 .site-header {
-  background-color: #ffffff !important;
+  background-color: #F5F8F6 !important;
   text-align: center;
   margin-top: 1rem;
 }
@@ -33,5 +33,5 @@ footer {
 body {
   padding-bottom: 60px; 
   padding-top: 40px;
-  background-color: #F5F8F6;
+  background-color: #F5F8F6 !important;
 }
