@@ -55,6 +55,9 @@ footer {
   .text-success {
     color: #66BB6A !important;
   }
+  em{
+    color: rgb(191, 189, 189);
+  }
 }
 
 .celula-container {
