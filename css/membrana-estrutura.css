@@ -1,4 +1,3 @@
-/* ====== Modo Claro ====== */
 body {
   background-color: #F5F8F6 !important;
   color: #333333 !important;
@@ -38,7 +37,6 @@ footer {
   z-index: 4;
 }
 
-/* ====== Modo Escuro ====== */
 @media (prefers-color-scheme: dark) {
   body {
     background-color: #121A12 !important;
