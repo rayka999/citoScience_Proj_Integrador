@@ -58,6 +58,11 @@ footer {
   em{
     color: rgb(191, 189, 189);
   }
+  small{
+    color: #8FCF92 !important;
+    font-size: 0.85rem;
+    opacity: 0.9;
+  }
 }
 
 .membrana-bicamada {
